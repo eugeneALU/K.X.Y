@@ -10,7 +10,8 @@
     "watch": "webpack -w",
     "build": "webpack --mode=development",
     "start": "webpack-dev-server --hot --inline",
-    "deploy": "npm run build&&gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "eugeneALU",
   "license": "ISC",

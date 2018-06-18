@@ -14,3 +14,5 @@
     1. using Webpack
         HOW TO USE Webpack : https://ithelp.ithome.com.tw/articles/10193608
     2. using ESlint
+    3. using /*FETCH*/ to access YouTube API
+    4. using Auth to create token to access KKBOX API
