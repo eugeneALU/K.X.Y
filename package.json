@@ -11,7 +11,8 @@
     "build": "webpack --mode=production",
     "start": "webpack-dev-server --hot --inline",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "help": "gh-pages --help"
   },
   "author": "eugeneALU",
   "license": "ISC",
