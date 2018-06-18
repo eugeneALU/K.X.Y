@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+#chartslist{
+    width: 50%;
+    height: 60%;
+    overflow-y: scroll;
+}
+
+#chartslist::-webkit-scrollbar { 
+    width: 10px; 
+}
+
+#chartslist::-webkit-scrollbar-track {
+    background-color: #333333; 
+}
+
+#chartslist::-webkit-scrollbar-thumb {
+    background: #494949; 
+    border-radius: 10px;
+}
+
+#chartslist::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.selectlist{
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0px; 
+    border-radius: 4px;
+    cursor: pointer; 
+    display: block;
+    color: white;
+    font-size: 180%;
+    font-family: "cwTeXYen", cursive;
+    height: 30%;
+    width: 100%;
+}
+
+.selectlist span {
+    transition: 0.5s;
+}
+
+.selectlist span:after {
+    content: '\00bb';
+    position: relative;
+    opacity: 0;
+    right: -30px;
+    transition: 0.5s;
+}
+  
+.selectlist:hover span {
+    padding-right: 50px;
+}
+  
+.selectlist:hover span:after {
+    opacity: 1;
+    right: -20px;
+}
+
+.show {
+    visibility: visible;
+}
+
+.notshow {
+    visibility: hidden;
+}
+
+#waitpage {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #333333;
+    margin: 0;
+}
+
+#chartspage {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    background-color: #333333;
+    margin: 0;
+    height: 100vh; 
+    width: 100vw;
+}
+
+#readybutton {
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 200%;
+    font-family: 'Permanent Marker', cursive;
+    border:0;
+    width: 30vw;
+    height: 10vh;
+    cursor: pointer;
+    animation-name: fadeinout;
+    animation-duration: 1.7s; 
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes fadeinout{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+}

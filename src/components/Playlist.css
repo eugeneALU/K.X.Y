@@ -1,0 +1,162 @@
+#playlist {
+    height: 100vh;
+    width: 100vw;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: #333333;
+}
+
+#list {
+    height: 100%;
+    width: 30%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#list::-webkit-scrollbar { 
+    width: 10px; 
+}
+
+#list::-webkit-scrollbar-track {
+    background-color: #333333; 
+}
+
+#list::-webkit-scrollbar-thumb {
+    background: #494949; 
+    border-radius: 10px;
+}
+
+#list::-webkit-scrollbar-thumb:hover {
+    background: #666; 
+}
+
+#list::-webkit-scrollbar-corner {
+    display: none;
+}
+
+#list::-webkit-scrollbar-button {
+    display: none;
+}
+
+.selectsong{
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0px; 
+    border-radius: 4px;
+    cursor: pointer; 
+    display: block;
+    color: white;
+    font-size: 100%;
+    font-family: "cwTeXYen", cursive;
+    height: 10%;
+    width: 100%;
+}
+
+.selectsong span {
+    transition: 0.5s;
+}
+
+.selectsong span:after {
+    content: '\00bb';
+    position: relative;
+    display: none;
+    right: -30px;
+    transition: 0.5s;
+}
+  
+.selectsong:hover span {
+    padding-right: 50px;
+}
+  
+.selectsong:hover span:after {
+    display: inline;
+    right: -20px;
+}
+
+#backbutton {
+    height: 100%;
+    width: 1%;
+    background: #1d1d1d;
+    transition: 0.5s;
+}
+
+#backbutton:hover {
+    width: 6%;
+    background: #000000;
+}
+
+#backbutton button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #00000000;
+    color: white;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    white-space:pre-wrap;
+}
+
+#backbutton button:hover {
+    font-size: 300%;
+}
+
+#youtube {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    overflow: hidden;
+}
+
+.youtube-player {
+    top:0;
+}
+
+.control-button {
+    width:15%;
+    height: 100%;
+    background-color: #333333;
+    border: 0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.control-icon {
+    background-color: #333333;
+    transition: 0.5s;
+    width:50%;
+    height: 50%;
+}
+
+.control-icon:hover {
+    width:75%;
+    height: 75%;
+}
+
+#control-panel{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/*#previous-song {
+    background-image: url("./image/previous.svg");
+}
+
+#next-song {
+    background-image: url("./image/next.svg");
+}
+
+#play-pause {
+    background-image: url("./image/play-button.svg");
+}
+
+#mode-select {
+    background-image: url("./image/compact-disc.svg");
+}*/
