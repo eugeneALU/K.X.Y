@@ -16,3 +16,4 @@
     2. using ESlint
     3. using /*FETCH*/ to access YouTube API
     4. using Auth to create token to access KKBOX API
+    5. using HashRouter instead of BrowserRouter to validate github page

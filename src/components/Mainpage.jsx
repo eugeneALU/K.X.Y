@@ -1,12 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Router, Route} from 'react-router-dom';
-import createBrowserHistory from "history/createBrowserHistory";
+import { HashRouter as Router, Route} from 'react-router-dom';
 
 import Chartslist from 'components/Chartslist.jsx';
 import Playlist from 'components/Playlist.jsx';
-
-const history = createBrowserHistory();
 
 class Mainpage extends React.Component {
     constructor(props) {
@@ -15,7 +12,7 @@ class Mainpage extends React.Component {
 
     render() {
         return (
-            <Router history={history}>
+            <Router>
                 <div>
                     <Route exact path='/' render={() => (
                         <Chartslist />
