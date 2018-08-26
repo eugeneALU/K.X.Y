@@ -17,7 +17,7 @@ class Chartslist extends React.Component {
         this.ready = this.ready.bind(this);
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.props.dispatch(getChartslist());
     }
 
