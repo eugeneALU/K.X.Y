@@ -21,6 +21,7 @@ export function getPlaylist(id, length) {
                 
         api.chartFetcher.setPlaylistID(id).fetchTracks(length).then(response => {
             let playlist = response.data.data;
+            console.log(playlist);
             let name = playlist.map((item)=> {return [item.album.artist.name.split("(")[0], item.name.split("(")[0]].join(" - ")});
 
             dispatch(loadPlaylist(name));

@@ -9,7 +9,7 @@
     "check": "eslint src/.jsx",
     "watch": "webpack -w",
     "build": "webpack --mode=production",
-    "start": "webpack-dev-server --hot --inline"
+    "start": "webpack-dev-server"
   },
   "author": "eugeneALU",
   "license": "ISC",

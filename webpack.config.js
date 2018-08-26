@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 
 const srcPath = path.resolve(__dirname, 'src');
-const distPath = path.resolve(__dirname, 'dist');
+const distPath = path.resolve(__dirname, 'docs');
 
 module.exports = {
     mode: 'development',
