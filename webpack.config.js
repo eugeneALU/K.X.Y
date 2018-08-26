@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 
 const srcPath = path.resolve(__dirname, 'src');
-const distPath = path.resolve(__dirname, 'docs');
+const distPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
     mode: 'development',
@@ -61,7 +61,7 @@ module.exports = {
         contentBase: distPath,
         compress: true,
         hot:true,
-        port: 8080
+        port: 6060
     },
     devtool: 'cheap-source-map'
 };
